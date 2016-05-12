@@ -1,0 +1,15 @@
+﻿<div class="modal fade" tabindex="-1" aria-hidden="true" ng-style="{'display': 'block'}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title upper">{{ dialog.title }}</h4>
+            </div>
+            <div class="modal-body" ng-bind-html="dialog.message | trustAsHtml"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn green button-submit" ng-click="submit()">
+                    {{ dialog.submitText }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
